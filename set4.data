@@ -1,12 +1,17 @@
-%adult+stretch.data
+%yellow-small+adult-stretch
 %For your reference, the decision tree learned is the following. You don't have to use the same format. 
-%Each leaf node comes with the number of instances classified in that node.
-%act = STRETCH
-%|   age = ADULT: T (8.0)
-%|   age = CHILD: F (4.0)
-%act = DIP: F (8.0)
+%Each leaf node comes with the number of instances classified in that node. 
+%(4.0/1.0) means that 1 instance out of 4 is not the negative example. 
+%color = YELLOW
+%|   size = LARGE: F (4.0/1.0)
+%|   size = SMALL: T (4.0)
+%color = PURPLE
+%|   act = STRETCH
+%|   |   age = ADULT: T (2.0)
+%|   |   age = CHILD: F (2.0)
+%|   act = DIP: F (4.0)
 
-@relation set1
+@relation set4
 
 @attribute color {YELLOW, PURPLE}
 @attribute size  {LARGE, SMALL}
@@ -16,24 +21,18 @@
 
 @data
 YELLOW,SMALL,STRETCH,ADULT,T
-YELLOW,SMALL,STRETCH,ADULT,T
-YELLOW,SMALL,STRETCH,CHILD,F
-YELLOW,SMALL,DIP,ADULT,F
-YELLOW,SMALL,DIP,CHILD,F
-YELLOW,LARGE,STRETCH,ADULT,T
+YELLOW,SMALL,STRETCH,CHILD,T
+YELLOW,SMALL,DIP,ADULT,T
+YELLOW,SMALL,DIP,CHILD,T
 YELLOW,LARGE,STRETCH,ADULT,T
 YELLOW,LARGE,STRETCH,CHILD,F
 YELLOW,LARGE,DIP,ADULT,F
 YELLOW,LARGE,DIP,CHILD,F
 PURPLE,SMALL,STRETCH,ADULT,T
-PURPLE,SMALL,STRETCH,ADULT,T
 PURPLE,SMALL,STRETCH,CHILD,F
 PURPLE,SMALL,DIP,ADULT,F
 PURPLE,SMALL,DIP,CHILD,F
 PURPLE,LARGE,STRETCH,ADULT,T
-PURPLE,LARGE,STRETCH,ADULT,T
 PURPLE,LARGE,STRETCH,CHILD,F
 PURPLE,LARGE,DIP,ADULT,F
 PURPLE,LARGE,DIP,CHILD,F
-
-@end

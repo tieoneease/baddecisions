@@ -1,0 +1,87 @@
+{
+  "name": "color",
+  "vals": [
+    {
+      "name": "YELLOW",
+      "child": {
+        "name": "size",
+        "vals": [
+          {
+            "name": "SMALL",
+            "child": {
+              "name": "T"
+            }
+          },
+          {
+            "name": "LARGE",
+            "child": {
+              "name": "act",
+              "vals": [
+                {
+                  "name": "STRETCH",
+                  "child": {
+                    "name": "age",
+                    "vals": [
+                      {
+                        "name": "ADULT",
+                        "child": {
+                          "name": "T"
+                        }
+                      },
+                      {
+                        "name": "CHILD",
+                        "child": {
+                          "name": "F"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "DIP",
+                  "child": {
+                    "name": "F"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "PURPLE",
+      "child": {
+        "name": "act",
+        "vals": [
+          {
+            "name": "STRETCH",
+            "child": {
+              "name": "age",
+              "vals": [
+                {
+                  "name": "ADULT",
+                  "child": {
+                    "name": "T"
+                  }
+                },
+                {
+                  "name": "CHILD",
+                  "child": {
+                    "name": "F"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "DIP",
+            "child": {
+              "name": "F"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
